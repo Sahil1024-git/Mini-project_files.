@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix Clone Login and Signup Page">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="file:///C:/Users/LENOVO/.vscode/codes/web d/my/projects/Netflix clone/icons/netflix_logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #000;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            width: 150px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group input {
+            width: 93%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: #fff;
+        }
+
+        .form-group input:focus {
+            outline: 2px solid #e50914;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #f40612;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        p a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Signup Page -->
+        <div class="form-container" id="signup-page">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo" class="logo">
+            <h2>Sign Up</h2>
+            <form action="account.html">
+                <div class="form-group">
+                    <input type="email" name="signup-email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="signup-password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="signup-confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="sign_in.html">Sign in here.</a></p>
+        </div>
+    </div>
+</body>
+</html>
